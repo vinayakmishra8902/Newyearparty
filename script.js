@@ -10,7 +10,7 @@ const personalizedData = {
         quote: "This is the sexiest person of the world!",
         imageUrl: "https://media.discordapp.net/attachments/1282987828464062486/1454340947067539547/IMG_20251224_233329_161.webp?ex=6950bc0e&is=694f6a8e&hm=0b9b82687263c6923e4f6ecaad15f5bdade627129b6f959ce73c6e2da1b059c8&=&format=webp&width=930&height=930 "
     },
-        Papa: {
+    Papa: {
         code: "papa",  
         quote: `✨ Gurmehar — Your 2025 Wrapped ✨
 
