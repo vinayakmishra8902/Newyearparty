@@ -12,22 +12,7 @@ const personalizedData = {
     },
         Papa: {
         code: "papa",  
-        quote: "✨ Gurmehar — Your 2025 Wrapped ✨
-
-This year with you in the van and at school honestly felt different — in a good way.
-
-✅ You’re genuinely funny — the type of person who can make even a boring van ride feel fun.
-
-But I have to say it honestly…
-
-❌ sometimes you reply late and I just sit there like: “ok… I’ll wait 😭”
-
-Still, the best parts are definitely you:
-
-✅ you’re a little angry queen sometimes, but somehow it’s cute 😆
-✅ and deep down, you’re a really good person — caring, sweet, and easy to like.
-
-I won’t lie — I kinda had a crush on you this year.",
+        quote: "✨ Gurmehar — Your 2025 Wrapped ✨",
         imageUrl: "https://images.unsplash.com/photo-1672685667592-0392f458f46f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjY3NTMzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
 
