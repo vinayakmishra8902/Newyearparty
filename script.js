@@ -12,7 +12,14 @@ const personalizedData = {
     },
         Papa: {
         code: "papa",  
-        quote: "✨ Gurmehar — Your 2025 Wrapped ✨",
+        quote: `✨ Gurmehar — Your 2025 Wrapped ✨
+
+This year with you felt really special.
+
+👍 You’re funny  
+😄 Van rides were never boring  
+😆 Sometimes reply late (and I wait like 🥲)  
+❤️ But you’re sweet, caring and a little angry-queen — in a cute way.`,
         imageUrl: "https://images.unsplash.com/photo-1672685667592-0392f458f46f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjY3NTMzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
 
