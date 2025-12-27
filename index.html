@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <img src="https://media.discordapp.net/attachments/1282987828464062486/1454347600471003270/pexels-grizzlybear-399610.jpg?ex=6950c240&is=694f70c0&hm=a7dc89f5f63ad27ee4982ae2d4128f48f34a41a2b611e538fd1029199863604c&=&format=webp&width=1240&height=826" 
+             alt="New Year Celebration">
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Glassmorphism Card -->
+        <div class="glass-card">
+            <div class="card-content">
+                <!-- Heading -->
+                <div class="heading-section">
+                    <h1>Happy New Year!</h1>
+                    <p class="year">2026</p>
+                    <div class="divider"></div>
+                </div>
+
+                <!-- Form -->
+                <form id="nameForm" class="form">
+                    <div class="form-group">
+                        <label for="nameInput">Enter your name</label>
+                        <input 
+                            type="text" 
+                            id="nameInput" 
+                            placeholder="Your name here..."
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="codeInput">Enter your personal code</label>
+                        <input 
+                            type="text" 
+                            id="codeInput" 
+                            placeholder="Your personal code..."
+                        >
+                    </div>
+                    <div id="errorMessage" class="error-message hidden"></div>
+                    <button type="submit" class="submit-btn">Go</button>
+                </form>
+
+                <!-- Decorative Elements -->
+                <!-- <div class="emojis">
+                    <span class="emoji" style="animation-delay: 0s">🎆</span>
+                    <span class="emoji" style="animation-delay: 0.1s">🎉</span>
+                    <span class="emoji" style="animation-delay: 0.2s">✨</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup-overlay hidden">
+        <canvas id="confetti-canvas"></canvas>
+        <div class="popup-backdrop"></div>
+        <div class="popup-card">
+            <button class="close-btn" onclick="closePopup()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <div class="popup-content">
+                <!-- Profile Image (will be shown conditionally) -->
+                <div id="profileImageContainer" class="profile-image-container hidden">
+                    <img id="profileImage" src="" alt="" class="profile-image">
+                </div>
+
+                <div class="popup-greeting">
+                    <h2 id="greetingName"></h2>
+                    <div class="popup-divider"></div>
+                </div>
+
+                <p id="quoteText" class="quote-text"></p>
+
+                <div class="popup-emojis">🎉✨🎊</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
