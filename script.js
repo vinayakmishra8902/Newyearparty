@@ -25,7 +25,23 @@ const personalizedData = {
     },
     vinayak: {
         code: "VINAYAK2025",
-        quote: "This is the sexiest person of the world!",
+        quote: `✨ nhottoobedisclosed — Your 2025 Wrapped ✨
+
+This year with you in the van and at school honestly felt different — in a good way.
+
+✅ You’re genuinely funny — the type of person who can make even a boring van ride feel fun.
+
+But I have to say it honestly…
+
+❌ sometimes you reply late and I just sit there like: “ok… I’ll wait 😭”
+
+Still, the best parts are definitely you:
+
+✅ you’re a little angry queen sometimes, but somehow it’s cute 😆  
+✅ and deep down, you’re a really good person — caring, sweet, and easy to like.
+
+I won’t lie — I kinda had a crush on you this year.  
+Thanks for being part of my year — it was better because of you 💙`,
         imageUrl: "https://media.discordapp.net/attachments/1282987828464062486/1454340947067539547/IMG_20251224_233329_161.webp?ex=6950bc0e&is=694f6a8e&hm=0b9b82687263c6923e4f6ecaad15f5bdade627129b6f959ce73c6e2da1b059c8&=&format=webp&width=930&height=930 "
     }
 };
