@@ -85,17 +85,25 @@ async function saveVisitorToFirebase(name, code) {
 // --- 7. FORM HANDLER (Updated to save data) ---
 nameForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     const name = nameInput.value.trim();
     const code = codeInput.value.trim();
-    
-    if (name) {
-        // Log to Firebase first
-        saveVisitorToFirebase(name, code);
-        // Then show the popup
-        showPopup(name, code);
+    const nameLower = name.toLowerCase();
+
+    // 🎵 START MUSIC IMMEDIATELY ON USER ACTION
+    if (nameLower === 'nitin' && nitinMusic) {
+        nitinMusic.currentTime = 0;
+        nitinMusic.volume = 0.6;
+        nitinMusic.play();
     }
+
+    // Save data (async is now SAFE)
+    saveVisitorToFirebase(name, code);
+
+    // Show popup
+    showPopup(name, code);
 });
+
 
 // --- 8. POPUP LOGIC ---
 function showPopup(name, code) {
@@ -115,15 +123,6 @@ function showPopup(name, code) {
                 
                 popup.classList.remove('hidden');
                 triggerConfetti();
-                if (nameLower === 'nitin') {
-                    if(nitinMusic) {
-                        nitinMusic.currentTime = 0;
-                        nitinMusic.volume = 0.6;
-                        nitinMusic.play().catch(() => {
-                            console.log("Autoplay blocked until user interaction");
-                        });
-                    }
-                }
             } else {
                 showError('❌ Incorrect code! Please enter the correct personal code.');
                 return;
