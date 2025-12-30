@@ -58,8 +58,114 @@ Thanks for being part of my year — it was better because of you 💙`,
         code: "GUR2025",  
         quote: "Your dedication and passion inspire everyone around you. May 2025 bring you extraordinary success and happiness. Keep shining bright!",
         imageUrl: "https://images.unsplash.com/photo-1672685667592-0392f458f46f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjY3NTMzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    }
-};
+  
+    },
+swarit: {
+    code: "SWARIT2025",
+    quote: `✨ Swarit — Your Year Wrapped ✨
+
+We’ve been together since 8th, and honestly — you’re one of those friends who actually changed me for the better.
+
+✅ you teach me when I’m wrong instead of just laughing
+❌ but haan… kabhi-kabhi tu woh cheez bhi bata deta hai jo chup rehni chahiye 
+✅ you give real reality checks — not sugar-coating
+✅ and you’re a trusted person, plus a really good photographer
+
+Thanks for being that friend who doesn’t just stay — but helps me grow.
+Grateful you were part of my year 💙`,
+    imageUrl: "" // add photo link if you have one
+},
+
+prince: {
+    code: "PRINCE2025",
+    quote: `✨ Prince — Your Year Wrapped ✨
+
+Sach bolu — shuru mein hum dono ka bilkul match hi nahi hota tha.
+But 9th ke baad slowly-slowly vibes match ho gaye — and now it actually feels good talking to you.
+
+✅ you turned into a genuinely good friend
+❌ kabhi-kabhi thoda awkward ho jata hai, ya seedha baat hi nahi karta 
+✅ but you listen, you understand
+✅ and most importantly — you’re a proper secret keeper
+
+Glad our vibes finally matched.
+Thanks for being part of my year 💙`,
+    imageUrl: ""
+},
+
+aryan: {
+    code: "ARYAN2025",
+    quote: `✨ Aryan — Your Year Wrapped ✨
+
+We’ve known each other since 8th, and honestly — pehle itna match nahi hota tha.
+But slowly, this year, vibes thodi-thodi set hone lagi.
+
+✅ you’ve got that romantic + sad songs playlist ready all the time
+
+But I’ll be honest…
+
+❌ kabhi-kabhi mood itna filmy ho jata hai ki lagta hai full movie chal rahi hai 
+
+Still…
+
+✅ you’re chill, fun to talk to
+✅ and haan… tu secret bhi sambhalta hai — waise mere paas bhi tera ek secret hai 😉
+
+Glad we’re actually matching better now.
+Let’s see how the next year goes — hopefully better vibes 💙`,
+    imageUrl: ""
+},
+
+aman: {
+    code: "AMAN2025",
+    quote: `✨ Aman — Your Year Wrapped ✨
+
+We didn’t meet in real life first — we met in a roleplay server in 2025.
+And somehow from that one RP moment… you actually became one of my closest friends.
+
+We played so many games together,
+did crazy police RP,
+and spent hours just laughing, talking and creating moments.
+
+First, the good stuff:
+
+✅ you’re loyal — once you call someone a friend, you stand with them
+❌ but yeah… sometimes you act too pro like “I know everything” 
+✅ you make every game and RP actually fun
+✅ and you feel more like a brother than just a player from a server
+
+And listen…
+
+No matter how big your rank becomes in RP —
+you will ALWAYS be my student 😆
+
+Thanks for being part of my year, bro.
+I’m really glad we met — even if it was in a virtual world 💙`,
+    imageUrl: ""
+},
+
+akshat: {
+    code: "AKSHAT2025",
+    quote: `✨ Akshat — Your Gamer Wrapped ✨
+
+We met almost 4 years ago on a Minecraft SMP — and honestly, at the start we were more like enemies than teammates.
+But somehow, after all the fights and chaos, we ended up becoming real friends.
+
+First, the good parts:
+
+✅ you’re competitive in every game we touch
+❌ but yeah… you always think you’re better than me (spoiler: you’re not 😆)
+✅ we’ve played so many games together — especially Valorant
+✅ and you’re still someone I can chill, laugh and waste hours with
+
+And remember…
+
+A student can never beat the teacher —
+no matter how hard you try 😌
+
+Glad you stayed in my year — and in my games 💙`,
+    imageUrl: ""
+},
 
 const defaultQuotes = [
     "May this new year bring you joy, peace, and endless possibilities!",
