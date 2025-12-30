@@ -409,6 +409,55 @@ input[type="text"]:focus {
     }
 }
 
+/* Media Player */
+.media-player {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-pause-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.play-pause-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.play-pause-btn:active {
+    transform: scale(0.95);
+}
+
+.play-pause-btn .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: opacity 0.2s ease;
+}
+
+.play-pause-btn .icon.hidden {
+    display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     h1 {
@@ -417,5 +466,20 @@ input[type="text"]:focus {
 
     .glass-card {
         padding: 2rem;
+    }
+
+    .media-player {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .play-pause-btn {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .play-pause-btn .icon {
+        width: 1.25rem;
+        height: 1.25rem;
     }
 }
