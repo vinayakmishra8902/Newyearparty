@@ -18,9 +18,19 @@ const db = getFirestore(app);
 
 // --- 4. PERSONALIZED DATA ---
 const personalizedData = {
-    nitin: {
-        code: "NITIN2025",  
-        quote: "Your dedication and passion inspire everyone around you. May 2025 bring you extraordinary success and happiness. Keep shining bright!",
+    vedika: {
+        code: "VEDIKA2025",  
+        quote: `✨ Vedika — Your Year Wrapped ✨
+
+We’ve been in the same class since 6th… and honestly, you’re like my school-type behen now 😂
+
+✅ you’re funny in your own random way
+❌ but yeah… sometimes you hit me in class for fun 😭
+✅ you sing good songs at random moments
+✅ and you’re supportive — you actually stand with people when they need it
+
+Even with all the madness, I’m glad you were part of my year.
+You made school better 💙`,
         imageUrl: "https://images.unsplash.com/photo-1672685667592-0392f458f46f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjY3NTMzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
     vinayak: {
