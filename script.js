@@ -33,6 +33,7 @@ Even with all the madness, I’m glad you were part of my year.
 You made school better 💙`,
         imageUrl: "https://images.unsplash.com/photo-1672685667592-0392f458f46f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjY3NTMzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
+
     vinayak: {
         code: "VINAYAK2025",
         quote: `✨ nhottoobedisclosed — Your 2025 Wrapped ✨
@@ -54,15 +55,18 @@ I won’t lie — I kinda had a crush on you this year.
 Thanks for being part of my year — it was better because of you 💙`,
         imageUrl: "https://media.discordapp.net/attachments/1282987828464062486/1454340947067539547/IMG_20251224_233329_161.webp?ex=6950bc0e&is=694f6a8e&hm=0b9b82687263c6923e4f6ecaad15f5bdade627129b6f959ce73c6e2da1b059c8&=&format=webp&width=930&height=930 "
     },
+
     gurmehar:{
         code: "GUR2025",  
         quote: "Your dedication and passion inspire everyone around you. May 2025 bring you extraordinary success and happiness. Keep shining bright!",
         imageUrl: "https://images.unsplash.com/photo-1672685667592-0392f458f46f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjY3NTMzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-  
     },
-swarit: {
-    code: "SWARIT2025",
-    quote: `✨ Swarit — Your Year Wrapped ✨
+
+    // 🔥 NEW PEOPLE BELOW 🔥
+
+    swarit: {
+        code: "SWARIT2025",
+        quote: `✨ Swarit — Your Year Wrapped ✨
 
 We’ve been together since 8th, and honestly — you’re one of those friends who actually changed me for the better.
 
@@ -73,12 +77,12 @@ We’ve been together since 8th, and honestly — you’re one of those friends 
 
 Thanks for being that friend who doesn’t just stay — but helps me grow.
 Grateful you were part of my year 💙`,
-    imageUrl: "" // add photo link if you have one
-},
+        imageUrl: ""
+    },
 
-prince: {
-    code: "PRINCE2025",
-    quote: `✨ Prince — Your Year Wrapped ✨
+    prince: {
+        code: "PRINCE2025",
+        quote: `✨ Prince — Your Year Wrapped ✨
 
 Sach bolu — shuru mein hum dono ka bilkul match hi nahi hota tha.
 But 9th ke baad slowly-slowly vibes match ho gaye — and now it actually feels good talking to you.
@@ -90,12 +94,12 @@ But 9th ke baad slowly-slowly vibes match ho gaye — and now it actually feels 
 
 Glad our vibes finally matched.
 Thanks for being part of my year 💙`,
-    imageUrl: ""
-},
+        imageUrl: ""
+    },
 
-aryan: {
-    code: "ARYAN2025",
-    quote: `✨ Aryan — Your Year Wrapped ✨
+    aryan: {
+        code: "ARYAN2025",
+        quote: `✨ Aryan — Your Year Wrapped ✨
 
 We’ve known each other since 8th, and honestly — pehle itna match nahi hota tha.
 But slowly, this year, vibes thodi-thodi set hone lagi.
@@ -113,12 +117,12 @@ Still…
 
 Glad we’re actually matching better now.
 Let’s see how the next year goes — hopefully better vibes 💙`,
-    imageUrl: ""
-},
+        imageUrl: ""
+    },
 
-aman: {
-    code: "AMAN2025",
-    quote: `✨ Aman — Your Year Wrapped ✨
+    aman: {
+        code: "AMAN2025",
+        quote: `✨ Aman — Your Year Wrapped ✨
 
 We didn’t meet in real life first — we met in a roleplay server in 2025.
 And somehow from that one RP moment… you actually became one of my closest friends.
@@ -141,12 +145,12 @@ you will ALWAYS be my student 😆
 
 Thanks for being part of my year, bro.
 I’m really glad we met — even if it was in a virtual world 💙`,
-    imageUrl: ""
-},
+        imageUrl: ""
+    },
 
-akshat: {
-    code: "AKSHAT2025",
-    quote: `✨ Akshat — Your Gamer Wrapped ✨
+    akshat: {
+        code: "AKSHAT2025",
+        quote: `✨ Akshat — Your Gamer Wrapped ✨
 
 We met almost 4 years ago on a Minecraft SMP — and honestly, at the start we were more like enemies than teammates.
 But somehow, after all the fights and chaos, we ended up becoming real friends.
@@ -164,8 +168,26 @@ A student can never beat the teacher —
 no matter how hard you try 😌
 
 Glad you stayed in my year — and in my games 💙`,
-    imageUrl: ""
-},
+        imageUrl: ""
+    },
+
+    aditya: {
+        code: "ADITYA2025",
+        quote: `✨ Aditya — Your Year Wrapped ✨
+
+From childhood till now — our vibes have always matched in a different way.
+You’re not just family, you’re someone I can actually talk to like a friend.
+
+✅ you’ve been my biggest secret keeper
+❌ but sometimes you give such crazy ideas that I start doubting my life choices 😭
+✅ you’ve taught me so many things — style, confidence, even how to talk properly 
+✅ and every moment with you feels fun, stupid, and unforgettable
+
+Spending time with you never feels boring.
+More memories, more madness — and more secrets we’ll never tell anyone 🤝`,
+        imageUrl: ""
+    }
+};
 
 const defaultQuotes = [
     "May this new year bring you joy, peace, and endless possibilities!",
