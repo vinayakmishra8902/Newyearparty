@@ -80,7 +80,15 @@ const quoteText = document.getElementById('quoteText');
 const profileImageContainer = document.getElementById('profileImageContainer');
 const profileImage = document.getElementById('profileImage');
 const confettiCanvas = document.getElementById('confetti-canvas');
-const nitinMusic = document.getElementById("nitinPopupMusic");
+const backgroundMusic = document.getElementById("backgroundMusic");
+const playPauseBtn = document.getElementById('playPauseBtn');
+const playIcon = document.getElementById('playIcon');
+const pauseIcon = document.getElementById('pauseIcon');
+
+// Verify audio element exists
+if (!backgroundMusic) {
+    console.error('Background music element not found!');
+}
 
 // --- 6. DATABASE SAVING FUNCTION (The missing piece) ---
 async function saveVisitorToFirebase(name, code) {
@@ -105,11 +113,11 @@ nameForm.addEventListener('submit', function(e) {
     const code = codeInput.value.trim();
     const nameLower = name.toLowerCase();
 
-    // 🎵 START MUSIC IMMEDIATELY ON USER ACTION
-    if (nameLower === 'gurmehar' && nitinMusic) {
-        nitinMusic.currentTime = 0;
-        nitinMusic.volume = 0.6;
-        nitinMusic.play();
+    // 🎵 START MUSIC IMMEDIATELY ON USER ACTION (if not already playing)
+    if (backgroundMusic && backgroundMusic.paused) {
+        backgroundMusic.volume = 0.6;
+        backgroundMusic.play().catch(e => console.log("Audio play failed:", e));
+        updatePlayPauseButton(true);
     }
 
     // Save data (async is now SAFE)
@@ -172,10 +180,7 @@ window.closePopup = function() {
     codeInput.value = '';
     errorMessage.classList.add('hidden');
     
-    if(nitinMusic) {
-        nitinMusic.pause();
-        nitinMusic.currentTime = 0;
-    }
+    // Don't pause background music when closing popup - let it continue playing
     
     const canvas = confettiCanvas;
     const ctx = canvas.getContext('2d');
@@ -223,6 +228,167 @@ window.addEventListener('resize', function() {
     confettiCanvas.width = window.innerWidth;
     confettiCanvas.height = window.innerHeight;
 });
+
+// --- 10. MEDIA PLAYER CONTROLS ---
+function updatePlayPauseButton(isPlaying) {
+    if (isPlaying) {
+        playIcon.classList.add('hidden');
+        pauseIcon.classList.remove('hidden');
+    } else {
+        playIcon.classList.remove('hidden');
+        pauseIcon.classList.add('hidden');
+    }
+}
+
+playPauseBtn.addEventListener('click', function(e) {
+    e.stopPropagation(); // Prevent triggering the document click handler
+    if (backgroundMusic) {
+        if (backgroundMusic.paused) {
+            backgroundMusic.play().then(() => {
+                console.log('Audio playing via button');
+                updatePlayPauseButton(true);
+            }).catch(e => {
+                console.error("Audio play failed:", e);
+                alert('Unable to play audio. Please check your browser settings or try clicking elsewhere on the page first.');
+            });
+        } else {
+            backgroundMusic.pause();
+            console.log('Audio paused via button');
+            updatePlayPauseButton(false);
+        }
+    } else {
+        console.error('Background music element not found!');
+    }
+});
+
+// Update button state based on audio events
+if (backgroundMusic) {
+    backgroundMusic.addEventListener('play', function() {
+        updatePlayPauseButton(true);
+    });
+    
+    backgroundMusic.addEventListener('pause', function() {
+        updatePlayPauseButton(false);
+    });
+    
+    backgroundMusic.addEventListener('ended', function() {
+        updatePlayPauseButton(false);
+    });
+}
+
+// Initialize audio on page load
+function initializeAudio() {
+    if (backgroundMusic) {
+        backgroundMusic.volume = 0.6;
+        
+        // Set initial button state
+        updatePlayPauseButton(!backgroundMusic.paused);
+        
+        // Handle audio loading errors
+        backgroundMusic.addEventListener('error', function(e) {
+            console.error('Audio loading error:', e);
+            console.error('Audio source:', backgroundMusic.src || backgroundMusic.currentSrc);
+            console.error('Error details:', backgroundMusic.error);
+            // Try alternative paths if main path fails
+            const audioSource = backgroundMusic.querySelector('source');
+            if (audioSource) {
+                // Try relative path
+                audioSource.src = './audio/song.mp3';
+                backgroundMusic.load();
+            }
+        });
+        
+        // Log when audio loads successfully
+        backgroundMusic.addEventListener('loadeddata', function() {
+            console.log('Audio loaded successfully:', backgroundMusic.currentSrc);
+            console.log('Audio duration:', backgroundMusic.duration);
+        });
+        
+        backgroundMusic.addEventListener('canplay', function() {
+            console.log('Audio can play - ready to play');
+        });
+        
+        backgroundMusic.addEventListener('loadstart', function() {
+            console.log('Audio loading started');
+        });
+        
+        // Try autoplay - will fail silently on browsers that require user interaction
+        const playPromise = backgroundMusic.play();
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                console.log('Audio playing automatically');
+                updatePlayPauseButton(true);
+            }).catch(e => {
+                // Autoplay blocked - will play on first user interaction
+                console.log("Autoplay blocked, waiting for user interaction:", e.message);
+                updatePlayPauseButton(false);
+            });
+        } else {
+            // Fallback if play() doesn't return a promise
+            updatePlayPauseButton(false);
+        }
+    } else {
+        console.error('Background music element not found during initialization!');
+    }
+}
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeAudio);
+} else {
+    // DOM is already ready
+    initializeAudio();
+}
+
+// Play music on any user interaction (click, touch, keypress)
+let hasInteracted = false;
+function tryPlayAudio() {
+    if (backgroundMusic) {
+        if (backgroundMusic.readyState >= 2) { // HAVE_CURRENT_DATA or higher
+            if (backgroundMusic.paused) {
+                backgroundMusic.play().then(() => {
+                    console.log('Audio started playing on user interaction');
+                    updatePlayPauseButton(true);
+                    hasInteracted = true;
+                }).catch(e => {
+                    console.error("Audio play failed:", e);
+                });
+            }
+        } else {
+            // Wait for audio to load
+            backgroundMusic.addEventListener('canplay', function() {
+                if (backgroundMusic.paused) {
+                    backgroundMusic.play().then(() => {
+                        console.log('Audio started playing after load');
+                        updatePlayPauseButton(true);
+                        hasInteracted = true;
+                    }).catch(e => {
+                        console.error("Audio play failed:", e);
+                    });
+                }
+            }, { once: true });
+        }
+    }
+}
+
+// Listen for multiple interaction types - play on ANY click anywhere
+document.addEventListener('click', function(e) {
+    // Don't interfere with play/pause button clicks
+    if (e.target !== playPauseBtn && !playPauseBtn.contains(e.target)) {
+        tryPlayAudio();
+    }
+}, { once: true });
+
+document.addEventListener('touchstart', tryPlayAudio, { once: true });
+document.addEventListener('keydown', tryPlayAudio, { once: true });
+
+// Also try to play when form is interacted with
+if (nameInput) {
+    nameInput.addEventListener('focus', tryPlayAudio, { once: true });
+}
+if (codeInput) {
+    codeInput.addEventListener('focus', tryPlayAudio, { once: true });
+}
 
 nameInput.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
