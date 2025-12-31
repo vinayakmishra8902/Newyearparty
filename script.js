@@ -161,12 +161,25 @@ You made school better 💙`,
 
   vinayak: {
     code: "VINAYAK2025",
-    quote: `✨ nhottoobedisclosed — Your 2025 Wrapped ✨
+    quote: `✨ My Little Sister — Your Year Wrapped ✨
 
-This year with you in the van and at school honestly felt different — in a good way.
- 
-Thanks for being part of my year — it was better because of you 💙`,
-    imageUrl: "https://media.discordapp.net/attachments/1282987828464062486/1454340947067539547/IMG_20251224_233329_161.webp?ex=6950bc0e&is=694f6a8e&hm=0b9b82687263c6923e4f6ecaad15f5bdade627129b6f959ce73c6e2da1b059c8&=&format=webp&width=930&height=930 "
+You’re small — but you mean a lot to me.
+Sometimes I feel like you’re not just my sister… you’re a big part of my life.
+
+✔ you’re sweet
+✔ you’re loving
+✔ and you always make the house feel happier
+
+But honestly…
+
+❌ papa ko complain kar dena har baat pe — bhai ke liye acha nahi hota 😭😂
+
+Still, your little mischiefs are cute,
+and I actually like the way you tease, laugh and play around.
+
+You’re a blessing to our family,
+and I’m really lucky to have you as my sister 💙`,
+    imageUrl: "/public/assets/soumya.jpg "
   },
 
   gurmehar: {
