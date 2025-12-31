@@ -292,12 +292,39 @@ input[type="text"]:focus {
   white-space: pre-line;
 }
 
-/* MUSIC BUTTON — unchanged, still works */
-
+/* MUSIC BUTTON — FIXED + VISIBLE */
 .media-player {
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
+  z-index: 300;   /* always on top */
+}
+
+/* The round button itself */
+.play-pause-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: all .25s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,.35);
+}
+
+.play-pause-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(236, 72, 153, .55);
+}
+
+.icon.hidden {
+  display: none;
+  
 }
 
 /* RESPONSIVE */
