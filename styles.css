@@ -9,7 +9,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  overflow: auto;
   background: #0f172a;
 }
 
@@ -78,7 +78,7 @@ body::before {
   position: relative;
   z-index: 10;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,6 +257,11 @@ input[type="text"]:focus {
   padding: 2rem;
   max-width: 28rem;
   width: 100%;
+
+  /* 👇 IMPORTANT FIX 👇 */
+  max-height: 90vh;
+  overflow-y: auto;
+
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow:
     0 0 50px rgba(236, 72, 153, .2),
@@ -264,7 +269,6 @@ input[type="text"]:focus {
   animation: scale-in .35s ease-out;
   z-index: 52;
 }
-
 /* Profile */
 
 .profile-image {
