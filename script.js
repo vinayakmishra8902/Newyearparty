@@ -31,7 +31,7 @@ We’ve been in the same class since 6th… and honestly, you’re like my schoo
 
 Even with all the madness, I’m glad you were part of my year.
 You made school better 💙`,
-        imageUrl: "https://images.unsplash.com/photo-1672685667592-0392f458f46f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjY3NTMzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+        imageUrl: "/public/assets/vedika.jpg"
     },
 
     vinayak: {
