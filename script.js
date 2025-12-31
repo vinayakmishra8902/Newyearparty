@@ -407,7 +407,7 @@ if (backgroundMusic) {
 // Initialize audio on page load
 function initializeAudio() {
     if (backgroundMusic) {
-        backgroundMusic.volume = 0.6;
+        backgroundMusic.volume = 0.4;
         
         // Set initial button state
         updatePlayPauseButton(!backgroundMusic.paused);
