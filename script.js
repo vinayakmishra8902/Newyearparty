@@ -67,8 +67,8 @@ Love you bhaiya 💙`,
     imageUrl: "/public/assets/sourav.jpg"
   },
 
-  seniorFriend: {
-    code: "SENIOR2025",
+  Abhay: {
+    code: "ABHAY2025",
     quote: `✨ Your Year Wrapped ✨
 
 We first met back in 6th — during exams — and yeah…
@@ -91,7 +91,7 @@ and you’ll be leaving school.
 
 It feels weird — but I’m really proud of you, and I hope you do great ahead.
 No matter where you go — I’ll still remember how our friendship started 😄`,
-    imageUrl: ""
+    imageUrl: "/public/assets/abhay.jpg"
   },
 
   sujal: {
@@ -140,7 +140,7 @@ Still — you’re one of the cutest sisters I could ever have,
 and I’m really happy you’re part of my life.
 
 Stay happy, stay cute, and never lose that innocence 💙`,
-    imageUrl: ""
+    imageUrl: "/public/assets/stuti.jpg"
   },
 
   vedika: {
@@ -164,25 +164,13 @@ You made school better 💙`,
     quote: `✨ nhottoobedisclosed — Your 2025 Wrapped ✨
 
 This year with you in the van and at school honestly felt different — in a good way.
-
-✅ You’re genuinely funny — the type of person who can make even a boring van ride feel fun.
-
-But I have to say it honestly…
-
-❌ sometimes you reply late and I just sit there like: “ok… I’ll wait 😭”
-
-Still, the best parts are definitely you:
-
-✅ you’re a little angry queen sometimes, but somehow it’s cute 😆  
-✅ and deep down, you’re a really good person — caring, sweet, and easy to like.
-
-I won’t lie — I kinda had a crush on you this year.  
+ 
 Thanks for being part of my year — it was better because of you 💙`,
     imageUrl: "https://media.discordapp.net/attachments/1282987828464062486/1454340947067539547/IMG_20251224_233329_161.webp?ex=6950bc0e&is=694f6a8e&hm=0b9b82687263c6923e4f6ecaad15f5bdade627129b6f959ce73c6e2da1b059c8&=&format=webp&width=930&height=930 "
   },
 
   gurmehar: {
-    code: "GURMEHAR2025",  
+    code: "GURMEHARFRIEND2025",  
     quote: `✨ Gurmehar — Your 2025 Wrapped ✨
 
 This year with you in the van and at school honestly felt different — in a good way.
@@ -330,11 +318,16 @@ More memories, more madness — and more secrets we’ll never tell anyone 🤝`
 };
 
 const defaultQuotes = [
-    "May this new year bring you joy, peace, and endless possibilities!",
-    "Here's to new beginnings and fresh starts. Happy New Year!",
-    "May your dreams take flight in this new year!",
-    "Wishing you 365 days of success, happiness, and adventure!",
-    "Cheers to a year filled with new opportunities and achievements!"
+    "✨ New year, new chances — may this one be your best chapter yet!",
+    "🌟 Here’s to growth, laughter, and moments that feel like magic. Happy New Year!",
+    "🎆 May this year surprise you with beautiful memories and big wins.",
+    "💫 You deserve peace, success, love — and everything that makes you smile.",
+    "🔥 Don’t just dream this year — build it. Your time starts now.",
+    "🎉 New year, same amazing you — just leveling up.",
+    "🌙 May every night be peaceful and every morning full of purpose.",
+    "🌈 If last year tested you, this year will bless you — trust the process.",
+    "💖 More happiness, more courage, more confidence — that’s your 2026 energy.",
+    "🚀 Small steps. Big progress. Beautiful results. Happy New Year!"
 ];
 
 // --- 5. DOM ELEMENTS ---
