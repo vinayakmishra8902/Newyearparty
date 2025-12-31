@@ -159,8 +159,8 @@ You made school better 💙`,
     imageUrl: "/public/assets/vedika.jpg"
   },
 
-  vinayak: {
-    code: "VINAYAK2025",
+  soumya: {
+    code: "SOUMYA2025",
     quote: `✨ My Little Sister — Your Year Wrapped ✨
 
 You’re small — but you mean a lot to me.
