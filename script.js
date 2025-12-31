@@ -57,9 +57,9 @@ Thanks for being part of my year — it was better because of you 💙`,
     },
 
     gurmehar:{
-        code: "GUR2025",  
+        code: "GURMEHAR2025",  
         quote: "Your dedication and passion inspire everyone around you. May 2025 bring you extraordinary success and happiness. Keep shining bright!",
-        imageUrl: "https://images.unsplash.com/photo-1672685667592-0392f458f46f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjY3NTMzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+        imageUrl: "/public/assets/gurmehar.jpg"
     },
 
     // 🔥 NEW PEOPLE BELOW 🔥
@@ -77,7 +77,7 @@ We’ve been together since 8th, and honestly — you’re one of those friends 
 
 Thanks for being that friend who doesn’t just stay — but helps me grow.
 Grateful you were part of my year 💙`,
-        imageUrl: ""
+        imageUrl: "/public/assets/swarit.jpg"
     },
 
     prince: {
@@ -94,7 +94,7 @@ But 9th ke baad slowly-slowly vibes match ho gaye — and now it actually feels 
 
 Glad our vibes finally matched.
 Thanks for being part of my year 💙`,
-        imageUrl: ""
+        imageUrl: "/public/assets/prince.jpg"
     },
 
     aryan: {
@@ -117,7 +117,7 @@ Still…
 
 Glad we’re actually matching better now.
 Let’s see how the next year goes — hopefully better vibes 💙`,
-        imageUrl: ""
+        imageUrl: "/public/assets/aryangupta.jpg"
     },
 
     aman: {
@@ -145,7 +145,7 @@ you will ALWAYS be my student 😆
 
 Thanks for being part of my year, bro.
 I’m really glad we met — even if it was in a virtual world 💙`,
-        imageUrl: ""
+        imageUrl: "/public/assets/aman.jpg"
     },
 
     akshat: {
@@ -168,7 +168,7 @@ A student can never beat the teacher —
 no matter how hard you try 😌
 
 Glad you stayed in my year — and in my games 💙`,
-        imageUrl: ""
+        imageUrl: "/public/assets/akshat.jpg"
     },
 
     aditya: {
