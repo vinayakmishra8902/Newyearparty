@@ -95,7 +95,7 @@
                 </div>
 
                 <p id="quoteText" class="quote-text"></p>
-                <a href="https://www.instagram.com/blameitvinayak/"  target="_blank" class="instagram-btn">
+                <a href="follow.html" class="instagram-btn">
                     NEXT
                     </a>
             </div>
@@ -106,9 +106,42 @@
     <source src="./audio/song.mp3" type="audio/mpeg">
     <source src="public/audio/song.mp3" type="audio/mpeg">
 </audio>
+
+    <div id="snow"></div>
+
     <!-- Confetti Library -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     <script type="module" src="script.js"></script>
+
+<script>
+function makeSnow() {
+  const snow = document.getElementById("snow");
+  if (!snow) return;
+
+  const flake = document.createElement("div");
+  flake.className = "flake";
+
+  const size = Math.random() * 6 + 2;
+  const duration = Math.random() * 6 + 6;
+  const delay = Math.random() * 4;
+
+  flake.style.left = Math.random() * 100 + "vw";
+  flake.style.width = size + "px";
+  flake.style.height = size + "px";
+  flake.style.animationDuration = duration + "s";
+  flake.style.animationDelay = delay + "s";
+
+  snow.appendChild(flake);
+
+  setTimeout(() => flake.remove(), (duration + delay) * 1000);
+}
+
+setInterval(makeSnow, 120);
+</script>
+
+<footer class="site-footer">
+  Made with ❤️ by <span>Vinayak</span>
+</footer>
 
 </body>
 </html>
