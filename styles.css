@@ -403,3 +403,29 @@ input[type="text"]:focus {
   background: linear-gradient(90deg, transparent, #facc15, transparent);
   opacity: .6;
 }
+
+.instagram-btn {
+  display: block;
+  margin: 1.5rem auto 0;
+  text-align: center;
+
+  padding: 0.9rem 2.2rem;
+  border-radius: 14px;
+
+  background: linear-gradient(120deg, #facc15, #ec4899, #a855f7);
+  color: white;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-decoration: none;
+  font-size: 0.95rem;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.35);
+  border: none;
+
+  transition: all .25s ease;
+}
+
+.instagram-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 25px rgba(236, 72, 153, .55);
+}
