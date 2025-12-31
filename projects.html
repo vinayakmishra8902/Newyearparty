@@ -1,1 +1,135 @@
-www
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Vinayak</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+body {
+  background: #020617;
+  color: white;
+}
+
+.projects-container {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.projects-title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.project-card {
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(18px);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: 1px solid rgba(255,255,255,.2);
+  box-shadow: 0 30px 60px rgba(0,0,0,.35);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 40px 80px rgba(0,0,0,.45);
+}
+
+.project-card h3 {
+  margin-bottom: .6rem;
+}
+
+.project-card p {
+  opacity: .9;
+  line-height: 1.6;
+  font-size: .95rem;
+}
+
+.project-btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: .7rem 1.4rem;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255,255,255,.8);
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: .2s ease;
+}
+
+.project-btn:hover {
+  background: rgba(255,255,255,.15);
+}
+</style>
+</head>
+
+<body>
+
+<div class="projects-container">
+
+  <h1 class="projects-title">Projects</h1>
+
+  <div class="cards">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>MultiverseMC</h3>
+      <p>
+        A thriving Minecraft network featuring Lifesteal, PvPPractice,
+        and minigames. Toxic-free community and custom gameplay designed
+        for every type of player.
+      </p>
+
+      <a class="project-btn" href="#" target="_blank">
+        View More
+      </a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>DimensionMC</h3>
+      <p>
+        A Minecraft network specializing in BoxPvP gameplay with unique
+        custom features and engaging PvP experience.
+      </p>
+
+      <a class="project-btn" href="#" target="_blank">
+        View More
+      </a>
+    </div>
+
+    <!-- Coming Soon -->
+    <div class="project-card">
+      <h3>Coming Soon</h3>
+      <p>
+        Stay tuned — more awesome projects are coming soon. Meanwhile,
+        check out my website 👇
+      </p>
+
+      <a class="project-btn" href="https://vinayak97.netlify.app" target="_blank">
+        Visit Website
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
