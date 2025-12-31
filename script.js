@@ -58,7 +58,23 @@ Thanks for being part of my year — it was better because of you 💙`,
 
     gurmehar:{
         code: "GURMEHAR2025",  
-        quote: "Your dedication and passion inspire everyone around you. May 2025 bring you extraordinary success and happiness. Keep shining bright!",
+        quote: `✨ Gurmehar — Your 2025 Wrapped ✨
+
+This year with you in the van and at school honestly felt different — in a good way.
+
+✅ You’re genuinely funny — the type of person who can make even a boring van ride feel fun.
+
+But I have to say it honestly…
+
+❌ sometimes you reply late and I just sit there like: “ok… I’ll wait 😭”
+
+Still, the best parts are definitely you:
+
+✅ you’re a little angry queen sometimes, but somehow it’s cute 😆  
+✅ and deep down, you’re a really good person — caring, sweet, and easy to like.
+
+I won’t lie — I kinda had a crush on you this year.  
+Thanks for being part of my year — it was better because of you 💙`,
         imageUrl: "/public/assets/gurmehar.jpg"
     },
 
