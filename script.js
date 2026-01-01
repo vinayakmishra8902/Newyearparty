@@ -43,7 +43,7 @@ I’m really lucky I got you as my sister, Aditi 💙`,
   },
 
   sourav: {
-    code: "SOURAV2025",
+    code: "SOURAVBHAIYAJi2025",
     quote: `✨ Sourav — Your Year Wrapped ✨
 
 You’ve always felt like the real big brother figure in my life.
@@ -95,7 +95,7 @@ No matter where you go — I’ll still remember how our friendship started 😄
   },
 
   sujal: {
-    code: "SUJAL2025",
+    code: "SUJALBHAIYAJI2025",
     quote: `✨ Sujal — Your Year Wrapped ✨
 
 You’ve always felt like one more brother to me.
